@@ -9,13 +9,12 @@
 
 ## Education
 **Portsmouth University, UK**  
-HND in Computing  
-*Extensive coursework, focusing on developing software programs, network solutions, websites, implementation of security methods and designing databases.*
-*Final year project consisted on making a online e-commerce store for a sports Club.*
-*July 2009*  
+HND in Computing - *2009*  
+- Extensive coursework, focusing on developing software programs, network solutions, websites, implementation of security methods and designing databases.
+- Final year project consisted on making a online e-commerce store for a sports Club.  
 
 ## Certification
-2017 - [Acquia Drupal 8 Site builder](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
+2017 - [Acquia Drupal 8 Site builder](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)  
 2017 - [Acquia Drupal 8 Front-end Specialist](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
 
 ## Skills
