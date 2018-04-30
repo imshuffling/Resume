@@ -8,10 +8,10 @@
 - Worked with mainly Drupal CMS, experimenting with new technologies such as React.
 
 ## Education
-**Portsmouth University, UK** 
+**Portsmouth University, UK**  
 HND in Computing  
 *Extensive coursework, focusing on developing software programs, network solutions, websites, implementation of security methods and designing databases.*
-*My final year project consisted on making a online e-commerce store for a sports Club.*
+*Final year project consisted on making a online e-commerce store for a sports Club.*
 *July 2009*  
 
 ## Certification
