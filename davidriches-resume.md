@@ -15,7 +15,7 @@ HND in Computing
 *July 2009*  
 
 ## Certification
-2017 - [Acquia Drupal 8 Site builder](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All) 
+2017 - [Acquia Drupal 8 Site builder](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
 2017 - [Acquia Drupal 8 Front-end Specialist](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
 
 ## Skills
@@ -42,7 +42,7 @@ Front-end Developer &ndash; Permanent
 - Learning and researching new web technologies.
 
 **NDP, London, UK**  
-Drupal Developer &ndash; Permanent
+Drupal Developer &ndash; Permanent  
 *November 2013 &ndash; February 2017*  
 - Front end developer / Drupal specialist working on new web builds
 - Built numerous Drupal Sites, focusing on site building and Front-end theme layer
@@ -59,7 +59,7 @@ Web Developer &ndash; Permanent
 - Web design graduate internship, managing clients and content publishing.
 - Contract role for a small web agency, working with the Kentico CMS.
 
-**Side Projects**
+**Side Projects** 
 - MJ Speech Therapy: React/Gatsby.js website for a children's speech therapist.
 - HB cleaning: Drupal 7 website for a carpet cleaning company based in Portsmouth.
 - Gatsby.js: Keen interesting in this static site generator for React.
