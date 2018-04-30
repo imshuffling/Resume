@@ -1,11 +1,13 @@
 > [davidrich.es](https://davidrich.es) |
 [hi@davidrich.es](mailto:hi@davidrich.es) |
-[+447956409288](tel:+44(0)7956409288)
+[+44(0)7956409288](tel:+447956409288)
 
-# David Riches &ndash; Front-end Developer / Drupal site builder
-- 6+ years of experience as a Web Engineer in various industries
+# David Riches &ndash; Front-end Developer &amp; Drupal site builder
+- 6+ years of experience as a Web Developer in various industries
 - Full stack skill-set with a concentration on front-end engineering
-- Worked with mainly Drupal CMS, experimenting with new technologies such as React.
+- Specialises in using Drupal CMS, going back as far as Drupal 6
+- Organising dev team catchups and Hackathons
+- Likes tinkering and experimenting with new technologies
 
 ## Education
 **Portsmouth University, UK**  
@@ -18,7 +20,7 @@ HND in Computing - *2009*
 2017 - [Acquia Drupal 8 Front-end Specialist](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
 
 ## Skills
-- Programming Language &ndash; JavaScript, CSS, LESS, SASS, HTML, PHP.
+- Programming Language &ndash; JavaScript, CSS, LESS, SASS, HTML, PHP, Twig
 - UI &ndash; Mobile-first Design, Responsive Web Design, Atomic Design.
 - Methodology &ndash; Agile, Scrum, Pair Programming.
 - Basic Linux DevOps and server administration.
