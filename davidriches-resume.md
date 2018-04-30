@@ -1,6 +1,6 @@
 > [davidrich.es](https://davidrich.es) |
 [hi@davidrich.es](mailto:hi@davidrich.es) |
-[+447956409288](tel:+447956409288)
+[+447956409288](tel:+44(0)7956409288)
 
 # David Riches &ndash; Front-end Developer / Drupal site builder
 - 6+ years of experience as a Web Engineer in various industries
