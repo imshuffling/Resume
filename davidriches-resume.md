@@ -49,7 +49,7 @@ Drupal Developer &ndash; Permanent
 - Reporting directly to the head of production & working closely with QA.
 - Providing support for junior members and client training.
 
-**Tui Travel, Bethesda, MD**  
+**Tui Travel, Portsmouth, UK**  
 Web Developer &ndash; Permanent  
 *March 2010 &ndash; November 2013*  
 - Worked for the Specialist & Activity sector on development tasks/projects for various brands such as Exodus, Quark Expeditions and YMT vacations.
