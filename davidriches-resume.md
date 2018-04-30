@@ -8,7 +8,7 @@
 - Worked with mainly Drupal CMS, experimenting with new technologies such as React.
 
 ## Education
-**Portsmouth University, UK**
+**Portsmouth University, UK** 
 HND in Computing  
 *Extensive coursework, focusing on developing software programs, network solutions, websites, implementation of security methods and designing databases.*
 *My final year project consisted on making a online e-commerce store for a sports Club.*
@@ -59,7 +59,7 @@ Web Developer &ndash; Permanent
 - Web design graduate internship, managing clients and content publishing.
 - Contract role for a small web agency, working with the Kentico CMS.
 
-**Side Projects** 
+**Side Projects**
 - MJ Speech Therapy: React/Gatsby.js website for a children's speech therapist.
 - HB cleaning: Drupal 7 website for a carpet cleaning company based in Portsmouth.
 - Gatsby.js: Keen interesting in this static site generator for React.
