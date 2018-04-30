@@ -40,6 +40,7 @@ Front-end Developer &ndash; Permanent
 - Lead developer on Activia platform, looking after 25 market brands, both in the EU and US.
 - Learning and researching new web technologies.
 
+
 **NDP, London, UK**  
 Drupal Developer &ndash; Permanent  
 *November 2013 &ndash; February 2017*  
@@ -48,11 +49,13 @@ Drupal Developer &ndash; Permanent
 - Reporting directly to the head of production & working closely with QA.
 - Providing support for junior members and client training.
 
+
 **Tui Travel, Portsmouth, UK**  
 Web Developer &ndash; Permanent  
 *March 2010 &ndash; November 2013*  
 - Worked for the Specialist & Activity sector on development tasks/projects for various brands such as Exodus, Quark Expeditions and YMT vacations.
 - Internal move to the Crystal Ski division, working closely with UX designer and researchers creating rapid prototypes
+
 
 **Previous Experiences:**
 - Web design graduate internship, managing clients and content publishing.
