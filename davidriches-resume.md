@@ -18,14 +18,16 @@ HND in Computing - *2009*
 2017 - [Acquia Drupal 8 Front-end Specialist](https://certification.acquia.com/registry?fname=David&lname=Riches&city=&state=&country=&org=&exam=All)
 
 ## Skills
-- Programming Language &ndash; JavaScript, CSS, LESS, SASS, HTML, PHP, React.
+- Programming Language &ndash; JavaScript, CSS, LESS, SASS, HTML, PHP.
 - UI &ndash; Mobile-first Design, Responsive Web Design, Atomic Design.
-- Methodology &ndash; Agile, Scrum, Cross-platform Development, Pair Programming.
+- Methodology &ndash; Agile, Scrum, Pair Programming.
+- Basic Linux DevOps and server administration.
 
 ## Tools
-- Framework &ndash; React, Node.js, Styled Components, Bootstrap, jQuery, Gatsby.js
+- Framework &ndash; React, Node.js, Styled Components, Bootstrap, jQuery, Vagrant, Gatsby.js
 - Automation Software &ndash; Webpack, Gulp, Jenkins.
 - Content Management System &ndash; Drupal 6/7/8, WordPress, Contentful
+- Service Providers &ndash; Acquia, Pantheon, Platform.sh
 - Graphic Editor &ndash; Adobe Photoshop, Sketch
 - Prototyping &ndash; InVision, Pattern Lab, Fractal
 - Version Control &ndash; Git and SVN
@@ -40,7 +42,6 @@ Front-end Developer &ndash; Permanent
 - Lead developer on Activia platform, looking after 25 market brands, both in the EU and US.
 - Learning and researching new web technologies.
 
-
 **NDP, London, UK**  
 Drupal Developer &ndash; Permanent  
 *November 2013 &ndash; February 2017*  
@@ -49,19 +50,17 @@ Drupal Developer &ndash; Permanent
 - Reporting directly to the head of production & working closely with QA.
 - Providing support for junior members and client training.
 
-
 **Tui Travel, Portsmouth, UK**  
 Web Developer &ndash; Permanent  
 *March 2010 &ndash; November 2013*  
 - Worked for the Specialist & Activity sector on development tasks/projects for various brands such as Exodus, Quark Expeditions and YMT vacations.
 - Internal move to the Crystal Ski division, working closely with UX designer and researchers creating rapid prototypes
 
-
-**Previous Experiences:**
+**Previous Experience:**
 - Web design graduate internship, managing clients and content publishing.
 - Contract role for a small web agency, working with the Kentico CMS.
 
 **Side Projects**
 - MJ Speech Therapy: React/Gatsby.js website for a children's speech therapist.
 - HB cleaning: Drupal 7 website for a carpet cleaning company based in Portsmouth.
-- Gatsby.js: Keen interesting in this static site generator for React.
+- Experimenting with static site generators, MetalSmith and Gatsby.js
