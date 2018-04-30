@@ -1,4 +1,4 @@
-> [stephencorwin.me](https://davidrich.es) |
+> [davidrich.es](https://davidrich.es) |
 [hi@davidrich.es](mailto:hi@davidrich.es) |
 [+447956409288](tel:+447956409288)
 
