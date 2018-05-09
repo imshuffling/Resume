@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/imshuffling/resume/issues"
   },
-  "homepage": "https://github.com/imshuffling/resume#readme"
+  "homepage": "https://github.com/imshuffling/resume#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-markdown": "^1.2.0"
+  }
 }
