@@ -38,6 +38,8 @@ HND in Computing - *2009*
 **Mirum Agency, London, UK**  
 Front-end Developer &ndash; Permanent   
 *March 2017 &ndash; Present*  
+- Grolsch.com - Lead developer for the "AS I AM" campaign, site built in Drupal 8.
+- Shell V-Power - Digital playbook for the global 'Feel It' campaign, Site built in React using Gatsby.js and Contentful
 - Mirum Opus 2018 - Single page application using Gatsby.js, content being served from Contentful.
 - Bayer content Hub - Drupal 8 site build with Fractal Front-end theme layer bolted on top - using Atomic design principles.
 - Led FE development of Drupal 8 for WaterAid, Developed & maintained a reusable components repository using Fractal.
