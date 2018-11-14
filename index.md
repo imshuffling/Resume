@@ -3,7 +3,7 @@
 [+44(0)7956409288](tel:+447956409288)
 
 # David Riches &ndash; Front-end Developer &amp; Drupal site builder
-- 6+ years of experience as a Web Developer in various industries
+- 7+ years of experience as a Web Developer in various industries
 - Full stack skill-set with a concentration on front-end engineering
 - Specialises in using Drupal CMS, going back as far as Drupal 6
 - Organising dev team catchups and Hackathons
