@@ -27,12 +27,12 @@ HND in Computing - *2009*
 
 ## Tools
 - Framework &ndash; React, Node.js, Styled Components, Bootstrap, jQuery, Vagrant, Gatsby.js
-- Automation Software &ndash; Webpack, Gulp, Jenkins.
+- Automation Software &ndash; Webpack, Gulp.
 - Content Management System &ndash; Drupal 6/7/8, WordPress, Contentful
 - Service Providers &ndash; Acquia, Pantheon, Platform.sh
 - Graphic Editor &ndash; Adobe Photoshop, Sketch
 - Prototyping &ndash; InVision, Pattern Lab, Fractal
-- Version Control &ndash; Git and SVN
+- Git version Control
 
 ## Experience
 **Mirum Agency, London, UK**  
