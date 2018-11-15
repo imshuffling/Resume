@@ -1,3 +1,3 @@
 ## 🚀 David Riches - resume
 
-- Built in React, Gatsby.js and Contentful.
+- A simple website built in React & Gatsby.js pulling resume in from Contentful.
