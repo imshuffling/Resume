@@ -6,7 +6,7 @@ if (process.env.ENVIRONMENT !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: 'David Riches - resume',
+    title: 'Resume - David Riches',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "David Riches - resume",
+        name: "Resume - David Riches",
         short_name: "DR resume",
         start_url: "/",
         background_color: "#ffffff",
