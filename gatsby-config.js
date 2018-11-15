@@ -1,12 +1,8 @@
-
 const dotenv = require('dotenv');
 
 if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config();
 }
-
-const { spaceId, accessToken } = process.env;
-
 
 module.exports = {
   siteMetadata: {
@@ -39,8 +35,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId,
-        accessToken,
+        spaceId: `r52fapf4ie31`,
+        accessToken: `ae22f26d1b797ed145f6102b687466a6ee04243e115b2044acadaf0752f4e725`
       },
     },
     'gatsby-plugin-offline',
