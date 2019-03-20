@@ -9,8 +9,8 @@ const HomePage = () => (
         contentfulResume {
           id
           title
-          body2 {
-            childMarkdownRemark {
+          body {
+            childContentfulRichText {
               html
             }
           }
@@ -19,8 +19,8 @@ const HomePage = () => (
     `}
     render={({
       contentfulResume: {
-        body2: {
-          childMarkdownRemark: { html },
+        body: {
+          childContentfulRichText: { html },
         },
       },
     }) => (

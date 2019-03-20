@@ -21,6 +21,16 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     {
+      resolve: '@contentful/gatsby-transformer-contentful-richtext',
+      options: {
+        renderOptions: {
+          renderNode: {
+            ["paragraph"]: (node, next) => `<p>${next(node.content).replace(/\n/g, `</br>`)}</p>`
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Resume - David Riches",
