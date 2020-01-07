@@ -1,20 +1,37 @@
 :root {
   font-family: 'Karla', Arial, sans-serif;
-  --black: #393531;
+  --text: #393531;
+
   --blue: rgba(137,212,255,0.5);
   line-height: 1.42857;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--text);
+}
+
 @media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --background: #393531;
+  }
+
   html {
     color: white;
-    background: var(--black);
+    background: var(--background);
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  html {
+    color: var(--text);
+    background: white;
   }
 }
 
 html {
   font-size: 16px;
-  color: var(--black);
 }
 
 @media screen and (min-width: 320px) {
@@ -43,7 +60,7 @@ ul {
   margin-bottom: 50px;
 }
 
-a {
+/* a {
   color: var(--black);
   border-bottom: 4px solid var(--blue);
   background: -webkit-gradient(linear,left top,left bottom,from(var(--blue)),to(var(--blue))) bottom no-repeat;
@@ -52,7 +69,7 @@ a {
   -webkit-transition: background-size .1s;
   transition: background-size .1s;
   text-decoration: none;
-}
+} */
 
 .markdown-body {
   box-sizing: border-box;
