@@ -55,7 +55,6 @@ blockquote {
 h1 {
   font-size: 1.912em;
   line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
-  margin-bottom: 0 !important;
 }
 
 h2 {
