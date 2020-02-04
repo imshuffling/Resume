@@ -26,11 +26,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gatsby develop -p 1234 -H 0.0.0.0",
+    "publish": "npm run _clean && npm run _build && npm run _encrypt && npm run _envDeploy",
+    "//": "========= PRIVATE SCRIPTS =========",
+    "_clean": "gatsby clean",
+    "_build": "gatsby build",
+    "_encrypt": "find ./public -type f -name \"*.html\" -exec npx staticrypt -f \"./src/components/password_template.html\" -t \"resume.davidrich.es\" {} jazzhat -o {} \\;",
+    "_deploy": "npx netlify-cli deploy --dir=public --prod",
+    "_envDeploy": "NETLIFY_SITE_ID=0787716f-4e21-47f4-b689-8e7fe56582ae NETLIFY_AUTH_TOKEN=9940c3332be768d6b41767811f7e66737328145216161463c3aa4696e603678f bash -c 'npm run _deploy'"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
