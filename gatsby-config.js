@@ -1,9 +1,3 @@
-const dotenv = require('dotenv');
-
-if (process.env.ENVIRONMENT !== 'production') {
-  dotenv.config();
-}
-
 module.exports = {
   siteMetadata: {
     title: 'Resume - David Riches',
