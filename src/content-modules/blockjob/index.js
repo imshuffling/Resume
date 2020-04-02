@@ -22,9 +22,9 @@ export default function BlockJob( {title, company,  date, to, summary} ) {
   return (
     <section className="job dotted-line">
         <h3>{title}</h3>
-        <div className="where">{company}</div>
+        <h4 className="where">{company}</h4>
         <div className="date">
-          <div className="date__item"><FontAwesomeIcon icon={faCalendar} />{date}</div>&nbsp;-&nbsp;
+          <div className="date__item"><FontAwesomeIcon size='1x' icon={faCalendar} />{date}</div>&nbsp;-&nbsp;
           {to !== null &&
               <div className="date__item">{to}</div>
           }

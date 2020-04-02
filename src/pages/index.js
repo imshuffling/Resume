@@ -17,14 +17,14 @@ export default ({ data }) => {
             <h1>{title}</h1>
             <h2>{introText}</h2>
           </div>
-          <Img fixed={image.fixed} />
+          <Img fluid={image.fluid} />
         </div>
 
         <div className="details">
-          <div><FontAwesomeIcon icon={faMapMarkerAlt} />{location}</div>
-          <div><FontAwesomeIcon icon={faPhoneAlt} /><a href={`tel:${phone}`}>{phone}</a></div>
-          <div><FontAwesomeIcon icon={faAt} /><a href={`mailto:${email}`}>{email}</a></div>
-          <div><FontAwesomeIcon icon={faLink} /><a href={`https://${website}`}>{website}</a></div>
+          <div><FontAwesomeIcon size='1x' icon={faMapMarkerAlt} />{location}</div>
+          <div><FontAwesomeIcon size='1x' icon={faPhoneAlt} /><a href={`tel:${phone}`}>{phone}</a></div>
+          <div><FontAwesomeIcon size='1x' icon={faAt} /><a href={`mailto:${email}`}>{email}</a></div>
+          <div><FontAwesomeIcon size='1x' icon={faLink} /><a href={`https://${website}`}>{website}</a></div>
         </div>
 
         <section className="modules">
@@ -53,8 +53,8 @@ query pageQuery {
         email
         website
         image {
-          fixed(width: 150, height: 150) {
-            ...GatsbyContentfulFixed
+          fluid(maxWidth: 150, maxHeight: 150) {
+            ...GatsbyContentfulFluid
           }
         }
         mainContent {

@@ -16,7 +16,7 @@ const propTypes = {
 };
 
 export default function Sidebar({sidebar}) {
-  console.log('---', sidebar);
+  // console.log('---', sidebar);
   return (
     <>
       {sidebar.map(({"__typename": type, ...props}, i) => {

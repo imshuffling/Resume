@@ -11,7 +11,7 @@ export default function BlockCertification( {title, items} ) {
           {items.map((i, id) =>
               <div className="certification__item" key={id}>
                 <div className="certification__icon">
-                  <FontAwesomeIcon icon={faAward} />
+                  <FontAwesomeIcon size='1x' icon={faAward} />
                 </div>
                 <div className="certification__copy">
                   <strong><a href={i.link}>{i.title}</a></strong>

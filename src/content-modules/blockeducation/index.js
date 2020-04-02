@@ -9,8 +9,8 @@ export default function BlockEducation( {title, university, to, end } ) {
         <h2>{title}</h2>
         <div className="where">{university}</div>
         <div className="date">
-          <div className="date__item"><FontAwesomeIcon icon={faCalendar} />{to}</div>&nbsp;-&nbsp;<div className="date__item">{end}</div>
-          <div className="date_location"><FontAwesomeIcon icon={faMapMarkerAlt} />Portsmouth, UK</div>
+          <div className="date__item"><FontAwesomeIcon size='1x' icon={faCalendar} />{to}</div>&nbsp;-&nbsp;<div className="date__item">{end}</div>
+          <div className="date_location"><FontAwesomeIcon size='1x' icon={faMapMarkerAlt} />Portsmouth, UK</div>
         </div>
     </section>
   );
