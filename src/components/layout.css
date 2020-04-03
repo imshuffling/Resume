@@ -235,6 +235,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
 }
 
+.certification__icon .svg-inline--fa path {
+  fill: var(--blue);
+}
+
+.details .svg-inline--fa {
+  width: 17.0312px !important;
+}
+
+.date__item .svg-inline--fa {
+  width: 12.375px !important;
+}
 
 .svg-inline--fa path {
   fill: #555;
