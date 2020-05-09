@@ -79,7 +79,7 @@ h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
+  margin: calc(10px + 1.05vw) 0; /* Responsive margins */
 }
 
 .headline {
