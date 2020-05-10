@@ -54,6 +54,11 @@ blockquote {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 1.912em;
   line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
@@ -258,6 +263,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .date_location {
   margin-left: 20px;
+}
+
+.certification__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 3px;
 }
 
 .certification__icon .svg-inline--fa path {

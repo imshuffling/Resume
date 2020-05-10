@@ -94,6 +94,7 @@ query pageQuery {
                 title
                 year
                 link
+                type
               }
             }
         }

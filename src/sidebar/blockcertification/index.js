@@ -1,7 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAward } from '@fortawesome/free-solid-svg-icons'
-
+import Contentful from './../../images/contentful.png';
+import Acquia from './../../images/acquia.png';
 
 export default function BlockCertification( {title, items} ) {
 
@@ -11,7 +10,12 @@ export default function BlockCertification( {title, items} ) {
           {items.map((i, id) =>
               <div className="certification__item" key={id}>
                 <div className="certification__icon">
-                  <FontAwesomeIcon size='1x' icon={faAward} />
+                  {i.type === 'Contentful' &&
+                    <img alt={Contentful} src={Contentful} />
+                  }
+                  {i.type === 'Acquia' &&
+                    <img alt={Acquia} src={Acquia} />
+                  }
                 </div>
                 <div className="certification__copy">
                   <strong><a href={i.link}>{i.title}</a></strong>
