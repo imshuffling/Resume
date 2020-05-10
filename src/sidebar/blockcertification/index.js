@@ -1,6 +1,6 @@
 import React from 'react';
-import Contentful from './../../images/contentful.png';
-import Acquia from './../../images/acquia.png';
+import Contentful from '../../images/contentful.png';
+import Acquia from '../../images/acquia.png';
 
 export default function BlockCertification( {title, items} ) {
 
@@ -10,10 +10,10 @@ export default function BlockCertification( {title, items} ) {
           {items.map((i, id) =>
               <div className="certification__item" key={id}>
                 <div className="certification__icon">
-                  {i.type === 'Contentful' &&
+                  {i.type == 'Contentful' &&
                     <img alt={Contentful} src={Contentful} />
                   }
-                  {i.type === 'Acquia' &&
+                  {i.type == 'Acquia' &&
                     <img alt={Acquia} src={Acquia} />
                   }
                 </div>
