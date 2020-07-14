@@ -37,7 +37,11 @@ export default function BlockJob( {title, company,  date, to, summary} ) {
             )
           }
         </div>
-        {documentToReactComponents(summary.json, options)}
+        {summary !== null &&
+          <>
+            {documentToReactComponents(summary.json, options)}
+          </>
+        }
     </section>
   );
 }
