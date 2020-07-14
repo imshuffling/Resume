@@ -15,15 +15,14 @@ export default ({ data }) => {
           <div>
             <h1>{title}</h1>
             <h2>{introText}</h2>
+            <div className="details">
+              <div><FaMapMarkerAlt />{location}</div>
+              <div><FaPhoneAlt /><a href={`tel:${phone}`}>{phone}</a></div>
+              <div><FaAt /><a href={`mailto:${email}`}>{email}</a></div>
+              <div><FaLink /><a href={`https://${website}`}>{website}</a></div>
+            </div>
           </div>
           <Img fluid={image.fluid} />
-        </div>
-
-        <div className="details">
-          <div><FaMapMarkerAlt />{location}</div>
-          <div><FaPhoneAlt /><a href={`tel:${phone}`}>{phone}</a></div>
-          <div><FaAt /><a href={`mailto:${email}`}>{email}</a></div>
-          <div><FaLink /><a href={`https://${website}`}>{website}</a></div>
         </div>
 
         <section className="modules">
@@ -53,7 +52,7 @@ query pageQuery {
         website
         image {
           fluid(maxWidth: 150, maxHeight: 150) {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_tracedSVG
           }
         }
         mainContent {
