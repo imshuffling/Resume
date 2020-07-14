@@ -141,6 +141,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 70%;
 }
 
+.details > div {
+  display: flex;
+  align-items: center;
+}
+
+.details svg {
+  margin-right: 8px;
+}
+
 @media (max-width: 700px) {
   .details {
     width: 100%;
@@ -265,6 +274,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
 }
 
+.date_location svg {
+  margin-right: 2px;
+}
+
 .certification__icon {
   flex-basis: 20px !important;
   width: 20px;
@@ -282,25 +295,15 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 1 auto;
 }
 
-.certification__icon .svg-inline--fa path {
-  fill: var(--blue);
+.date__item {
+  display: flex;
+  align-items: center;
 }
 
-.details .svg-inline--fa {
-  width: 17.0312px !important;
+.date__item svg {
+  margin-right: 2px;
 }
 
-.date__item .svg-inline--fa {
-  width: 12.375px !important;
-}
-
-.svg-inline--fa path {
-  fill: #555;
-}
-
-.svg-inline--fa {
-  margin-right: 8px;
-}
 
 @media print {
   @page { size: 8.5in 12in; }

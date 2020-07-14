@@ -1,8 +1,7 @@
 import React from 'react';
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { FaCalendar } from "react-icons/fa";
 
 export default function BlockJob( {title, company,  date, to, summary} ) {
 
@@ -24,7 +23,7 @@ export default function BlockJob( {title, company,  date, to, summary} ) {
         <h3>{title}</h3>
         <h4 className="where">{company}</h4>
         <div className="date">
-          <div className="date__item"><FontAwesomeIcon size='1x' icon={faCalendar} />{date}</div>&nbsp;-&nbsp;
+          <div className="date__item"><FaCalendar />{date}</div>&nbsp;-&nbsp;
           {to !== null &&
               <div className="date__item">{to}</div>
           }

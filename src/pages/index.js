@@ -4,8 +4,7 @@ import Layout from '../components/layout';
 import ContentModules from '../content-modules'
 import Sidebar from '../sidebar'
 import Img from "gatsby-image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faPhoneAlt, faLink, faAt } from '@fortawesome/free-solid-svg-icons'
+import { FaMapMarkerAlt, FaPhoneAlt, FaLink, FaAt } from "react-icons/fa";
 
 export default ({ data }) => {
   const { title, introText, location, phone, email, website, mainContent, sidebar, image } = data.allContentfulResume.edges[0].node
@@ -21,10 +20,10 @@ export default ({ data }) => {
         </div>
 
         <div className="details">
-          <div><FontAwesomeIcon size='1x' icon={faMapMarkerAlt} />{location}</div>
-          <div><FontAwesomeIcon size='1x' icon={faPhoneAlt} /><a href={`tel:${phone}`}>{phone}</a></div>
-          <div><FontAwesomeIcon size='1x' icon={faAt} /><a href={`mailto:${email}`}>{email}</a></div>
-          <div><FontAwesomeIcon size='1x' icon={faLink} /><a href={`https://${website}`}>{website}</a></div>
+          <div><FaMapMarkerAlt />{location}</div>
+          <div><FaPhoneAlt /><a href={`tel:${phone}`}>{phone}</a></div>
+          <div><FaAt /><a href={`mailto:${email}`}>{email}</a></div>
+          <div><FaLink /><a href={`https://${website}`}>{website}</a></div>
         </div>
 
         <section className="modules">
