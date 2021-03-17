@@ -14,6 +14,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -24,7 +25,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#F40088",
         display: "minimal-ui",
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     {
