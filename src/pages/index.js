@@ -6,7 +6,7 @@ import ContentModules from '../content-modules'
 import Sidebar from '../sidebar'
 import styled from 'styled-components'
 
-export default ({ data }) => {
+const ResumePage = ({ data }) => {
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node
 
   const ModuleStyles = styled.section`
@@ -55,6 +55,8 @@ export default ({ data }) => {
   )
 }
 
+export default ResumePage
+
 export const query = graphql`
   query pageQuery {
     allContentfulResume(filter: { slug: { eq: "david-riches" } }) {
@@ -81,7 +83,7 @@ export const query = graphql`
               date(formatString: "MM/YYYY")
               to(formatString: "MM/YYYY")
               summary {
-                json
+                raw
               }
             }
             ... on ContentfulEducation {
@@ -96,7 +98,7 @@ export const query = graphql`
             ... on ContentfulSummary {
               title
               body {
-                json
+                raw
               }
             }
             ... on ContentfulSkills {
