@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
 import Header from "../components/Header";
 import ContentModules from "../content-modules";
 import Sidebar from "../sidebar";
@@ -10,12 +9,13 @@ const ResumePage = ({ data }) => {
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
 
   const ModuleStyles = styled.section`
-    grid-column-gap: 60px;
+    grid-column-gap: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 30em) {
       grid-template-columns: 2fr 1fr;
+      grid-column-gap: 60px;
     }
 
     .headline {
@@ -26,21 +26,22 @@ const ResumePage = ({ data }) => {
 
     .mainContent {
       order: 2;
-      @media (min-width: 1100px) {
+      @media (min-width: 30em) {
         order: 1;
       }
     }
 
     .sidebar {
-      order: 2;
-      @media (min-width: 1100px) {
-        order: 1;
+      order: 1;
+      margin-bottom: calc(10px + 1.05vw);
+      @media (min-width: 30em) {
+        order: 2;
       }
     }
   `;
 
   return (
-    <Layout>
+    <>
       <Header header={data.allContentfulResume.edges[0].node} />
       <ModuleStyles className="modules">
         <main className="module mainContent">
@@ -51,7 +52,7 @@ const ResumePage = ({ data }) => {
           {sidebar && <Sidebar sidebar={sidebar} />}
         </aside>
       </ModuleStyles>
-    </Layout>
+    </>
   );
 };
 

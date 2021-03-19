@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
         width: calc(100% - 40px);
         margin: 0 auto;
         padding: 30px 20px;
-        @media (min-width: 1100px) {
+        @media (min-width: 30em) {
             padding: 60px 20px;
         }
     }
@@ -189,6 +189,6 @@ const GlobalStyles = createGlobalStyle`
     .date__item svg {
         margin-right: 4px;
     }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

@@ -1,7 +1,7 @@
-import React from 'react'
-import { FaMapMarkerAlt, FaPhoneAlt, FaLink, FaAt } from 'react-icons/fa'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
+import React from "react";
+import { FaMapMarkerAlt, FaPhoneAlt, FaLink, FaAt } from "react-icons/fa";
+import Img from "gatsby-image";
+import styled from "styled-components";
 
 export default function Header(props) {
   const {
@@ -12,27 +12,30 @@ export default function Header(props) {
     email,
     website,
     image,
-  } = props.header
+  } = props.header;
 
   const HeaderStyles = styled.header`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 70px 1fr;
+    margin-bottom: 0;
 
-    > div {
-      flex: 1 1 auto;
+    @media (min-width: 30em) {
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 60px;
+      margin-bottom: 40px;
     }
 
     h1 {
       font-size: 3em;
-      line-height: calc(18px + 3vw);
+      line-height: calc(18px + 7vw);
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: -2px;
       margin: 0;
+      @media (min-width: 30em) {
+        line-height: calc(18px + 3vw);
+      }
     }
 
     h2 {
@@ -42,28 +45,51 @@ export default function Header(props) {
     }
 
     .gatsby-image-wrapper {
-      margin-bottom: 20px;
       max-width: 190px;
+      order: 1;
+      align-self: flex-start;
+      width: 100%;
+      img {
+        object-fit: contain !important;
+      }
+
+      @media (min-width: 30em) {
+        order: 2;
+        margin-left: auto;
+      }
+    }
+
+    .details_wrap {
+      order: 2;
+      @media (min-width: 30em) {
+        order: 1;
+      }
     }
 
     .details {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 30px;
+      grid-column-gap: 0px;
       padding: 15px 0;
-      grid-row-gap: 10px;
+      grid-row-gap: 5px;
       width: 100%;
+
+      @media (min-width: 30em) {
+        grid-column-gap: 30px;
+        padding: 15px 0;
+        grid-row-gap: 10px;
+      }
 
       svg {
         margin-right: 8px;
         fill: var(--primary-colour);
       }
     }
-  `
+  `;
 
   return (
     <HeaderStyles className="intro">
-      <div>
+      <div className="details_wrap">
         <h1>{title}</h1>
         <h2>{introText}</h2>
         <div className="details">
@@ -87,5 +113,5 @@ export default function Header(props) {
       </div>
       <Img fluid={image.fluid} />
     </HeaderStyles>
-  )
+  );
 }
