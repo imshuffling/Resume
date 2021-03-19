@@ -1,13 +1,13 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import ContentModules from '../content-modules'
-import Sidebar from '../sidebar'
-import styled from 'styled-components'
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import ContentModules from "../content-modules";
+import Sidebar from "../sidebar";
+import styled from "styled-components";
 
 const ResumePage = ({ data }) => {
-  const { mainContent, sidebar } = data.allContentfulResume.edges[0].node
+  const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
 
   const ModuleStyles = styled.section`
     grid-column-gap: 60px;
@@ -37,7 +37,7 @@ const ResumePage = ({ data }) => {
         order: 1;
       }
     }
-  `
+  `;
 
   return (
     <Layout>
@@ -52,10 +52,10 @@ const ResumePage = ({ data }) => {
         </aside>
       </ModuleStyles>
     </Layout>
-  )
-}
+  );
+};
 
-export default ResumePage
+export default ResumePage;
 
 export const query = graphql`
   query pageQuery {
@@ -120,4 +120,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
