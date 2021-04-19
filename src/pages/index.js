@@ -5,40 +5,40 @@ import ContentModules from "../content-modules";
 import Sidebar from "../sidebar";
 import styled from "styled-components";
 
+const ModuleStyles = styled.section`
+  grid-column-gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 30em) {
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  .headline {
+    border-bottom: 3px solid #000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .mainContent {
+    order: 2;
+    @media (min-width: 30em) {
+      order: 1;
+    }
+  }
+
+  .sidebar {
+    order: 1;
+    margin-bottom: calc(10px + 1.05vw);
+    @media (min-width: 30em) {
+      order: 2;
+    }
+  }
+`;
+
 const ResumePage = ({ data }) => {
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
-
-  const ModuleStyles = styled.section`
-    grid-column-gap: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    @media (min-width: 30em) {
-      grid-template-columns: 2fr 1fr;
-      grid-column-gap: 60px;
-    }
-
-    .headline {
-      border-bottom: 3px solid #000;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    .mainContent {
-      order: 2;
-      @media (min-width: 30em) {
-        order: 1;
-      }
-    }
-
-    .sidebar {
-      order: 1;
-      margin-bottom: calc(10px + 1.05vw);
-      @media (min-width: 30em) {
-        order: 2;
-      }
-    }
-  `;
 
   return (
     <>
@@ -72,9 +72,11 @@ export const query = graphql`
           email
           website
           image {
-            fluid(maxWidth: 150, maxHeight: 150) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: TRACED_SVG
+              formats: [WEBP, PNG]
+            )
           }
           mainContent {
             __typename
