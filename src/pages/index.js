@@ -78,6 +78,13 @@ export const query = graphql`
               formats: [WEBP, PNG]
             )
           }
+          imageHover {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: TRACED_SVG
+              formats: [WEBP, PNG]
+            )
+          }
           mainContent {
             __typename
             ... on ContentfulJob {

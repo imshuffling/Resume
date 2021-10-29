@@ -34,7 +34,7 @@ const HeaderStyles = styled.header`
     margin: 0;
   }
 
-  .gatsby-image-wrapper {
+  .image-wrap {
     max-width: 190px;
     order: 1;
     align-self: flex-start;
@@ -42,10 +42,33 @@ const HeaderStyles = styled.header`
     img {
       object-fit: contain !important;
     }
+    position: relative;
 
     @media (min-width: 30em) {
       order: 2;
       margin-left: auto;
+    }
+  }
+
+  .image-default,
+  .image-hovered {
+    position: absolute;
+  }
+
+  .image-hovered {
+    rotate: 180deg;
+  }
+
+  .image-default:hover {
+    opacity: 0;
+  }
+
+  .gatsby-image-wrapper {
+    max-width: 190px;
+    align-self: flex-start;
+    width: 100%;
+    img {
+      object-fit: contain !important;
     }
   }
 
@@ -86,6 +109,7 @@ export default function Header(props) {
     email,
     website,
     image,
+    imageHover,
   } = props.header;
 
   return (
@@ -113,7 +137,10 @@ export default function Header(props) {
         </div>
       </div>
       {/* <Img fluid={image.fluid} /> */}
-      <GatsbyImage alt="David" image={image.gatsbyImageData} />
+      <div className="image-wrap">
+      <GatsbyImage className="image-hovered" alt="David Hovered!!!!" image={imageHover.gatsbyImageData} />
+      <GatsbyImage className="image-default" alt="David" image={image.gatsbyImageData} />
+      </div>
     </HeaderStyles>
   );
 }
