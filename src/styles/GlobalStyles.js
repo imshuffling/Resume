@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
         width: calc(100% - 40px);
         margin: 0 auto;
         padding: 30px 20px;
-        @media (min-width: 30em) {
+        @media (min-width: 60em) {
             padding: 60px 20px;
         }
     }
@@ -82,6 +82,14 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .job ul {
+        margin-bottom: 0;
+    }
+
+    .job ul li {
+        margin-bottom: 8px;
+    }
+
+    .job ul li:last-child {
         margin-bottom: 0;
     }
 
