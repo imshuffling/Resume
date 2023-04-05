@@ -74,15 +74,15 @@ export const query = graphql`
           image {
             gatsbyImageData(
               layout: CONSTRAINED
-              placeholder: TRACED_SVG
-              formats: [WEBP, PNG]
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
             )
           }
           imageHover {
             gatsbyImageData(
               layout: CONSTRAINED
-              placeholder: TRACED_SVG
-              formats: [WEBP, PNG]
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
             )
           }
           mainContent {
