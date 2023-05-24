@@ -24,7 +24,14 @@ export default function BlockCertification({ title, items }) {
           </div>
           <div className="certification__copy">
             <strong>
-              <a href={i.link}>{i.title}</a>
+              <a
+                href={i.link}
+                target="_blank"
+                rel="noreferrer"
+                type={i?.linkType === "pdf" ? "application/pdf" : "text/html"}
+              >
+                {i.title}
+              </a>
             </strong>
             <div className="certification__year">{i.year}</div>
           </div>

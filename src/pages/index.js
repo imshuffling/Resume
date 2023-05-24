@@ -123,6 +123,7 @@ export const query = graphql`
                 year
                 link
                 type
+                linkType
               }
             }
           }
