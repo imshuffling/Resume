@@ -3,6 +3,7 @@ import Contentful from "../../images/contentful.png";
 import Acquia from "../../images/acquia.png";
 import Bigcommerce from "../../images/bigcommerce.png";
 import HeadlessCreator from "../../images/headlesscreator.png";
+import LinkedIn from "../../images/linkedIn.png";
 
 export default function BlockCertification({ title, items }) {
   return (
@@ -20,6 +21,9 @@ export default function BlockCertification({ title, items }) {
             )}
             {i.type[0] === "HeadlessCreator" && (
               <img alt={"HeadlessCreator"} src={HeadlessCreator} />
+            )}
+            {i.type[0] === "linkedIn" && (
+              <img alt={"linkedIn"} src={LinkedIn} />
             )}
           </div>
           <div className="certification__copy">
