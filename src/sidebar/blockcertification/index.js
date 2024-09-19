@@ -4,6 +4,7 @@ import Acquia from "../../images/acquia.png";
 import Bigcommerce from "../../images/bigcommerce.png";
 import HeadlessCreator from "../../images/headlesscreator.png";
 import LinkedIn from "../../images/linkedIn.png";
+import Miro from "../../images/miro-essentials.png";
 
 export default function BlockCertification({ title, items }) {
   return (
@@ -25,6 +26,7 @@ export default function BlockCertification({ title, items }) {
             {i.type[0] === "linkedIn" && (
               <img alt={"linkedIn"} src={LinkedIn} />
             )}
+            {i.type[0] === "Miro" && <img alt={"Miro"} src={Miro} />}
           </div>
           <div className="certification__copy">
             <strong>
