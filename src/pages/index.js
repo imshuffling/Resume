@@ -3,39 +3,6 @@ import { graphql } from "gatsby";
 import Header from "../components/Header";
 import ContentModules from "../content-modules";
 import Sidebar from "../sidebar";
-import styled from "styled-components";
-
-const ModuleStyles = styled.section`
-  grid-column-gap: 40px;
-  display: grid;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 30em) {
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 60px;
-  }
-
-  .headline {
-    border-bottom: 3px solid #000;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .mainContent {
-    order: 2;
-    @media (min-width: 30em) {
-      order: 1;
-    }
-  }
-
-  .sidebar {
-    order: 1;
-    margin-bottom: calc(10px + 1.05vw);
-    @media (min-width: 30em) {
-      order: 2;
-    }
-  }
-`;
 
 const ResumePage = ({ data }) => {
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
@@ -43,15 +10,15 @@ const ResumePage = ({ data }) => {
   return (
     <>
       <Header header={data.allContentfulResume.edges[0].node} />
-      <ModuleStyles className="modules">
-        <main className="module mainContent">
-          <h3 className="headline">Experience</h3>
+      <div className="flex flex-col md:grid md:grid-cols-[2fr_1fr] gap-6 md:gap-2 modules">
+        <main className="flex flex-col gap-1 md:gap-4 module mainContent prose">
+          <h3 className="headline text-lg border-b-2">Experience</h3>
           {mainContent && <ContentModules mainContent={mainContent} />}
         </main>
-        <aside className="module sidebar">
+        <aside className="module sidebar flex flex-col gap-4">
           {sidebar && <Sidebar sidebar={sidebar} />}
         </aside>
-      </ModuleStyles>
+      </div>
     </>
   );
 };

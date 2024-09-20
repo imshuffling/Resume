@@ -1,107 +1,6 @@
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaLink, FaAt } from "react-icons/fa";
-// import Img from "gatsby-image";
 import { GatsbyImage } from "gatsby-plugin-image";
-import styled from "styled-components";
-
-const HeaderStyles = styled.header`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 70px 1fr;
-  margin-bottom: 0;
-
-  @media (min-width: 30em) {
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 60px;
-    margin-bottom: 40px;
-  }
-
-  h1 {
-    font-size: 3em;
-    line-height: calc(18px + 7vw);
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: -2px;
-    margin: 0;
-    @media (min-width: 30em) {
-      line-height: calc(18px + 3vw);
-    }
-  }
-
-  h2 {
-    color: var(--blue);
-    font-weight: bold;
-    margin: 0;
-  }
-
-  .image-wrap {
-    max-width: 190px;
-    order: 1;
-    align-self: flex-start;
-    width: 100%;
-    img {
-      object-fit: contain !important;
-    }
-    position: relative;
-
-    @media (min-width: 30em) {
-      order: 2;
-      margin-left: auto;
-    }
-
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦄</text></svg>")
-      16 0, auto;
-  }
-
-  .image-default,
-  .image-hovered {
-    position: absolute;
-  }
-
-  .image-hovered {
-    rotate: -3deg;
-  }
-
-  .image-default:hover {
-    opacity: 0;
-  }
-
-  .gatsby-image-wrapper {
-    max-width: 190px;
-    align-self: flex-start;
-    width: 100%;
-    img {
-      object-fit: contain !important;
-    }
-  }
-
-  .details_wrap {
-    order: 2;
-    @media (min-width: 30em) {
-      order: 1;
-    }
-  }
-
-  .details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 0px;
-    padding: 15px 0;
-    grid-row-gap: 5px;
-    width: 100%;
-
-    @media (min-width: 30em) {
-      grid-column-gap: 30px;
-      padding: 15px 0;
-      grid-row-gap: 10px;
-    }
-
-    svg {
-      margin-right: 8px;
-      fill: var(--primary-colour);
-    }
-  }
-`;
 
 export default function Header(props) {
   const {
@@ -112,38 +11,42 @@ export default function Header(props) {
     email,
     website,
     image,
-    imageHover,
   } = props.header;
 
   return (
-    <HeaderStyles className="intro">
-      <div className="details_wrap">
-        <h1>{title}</h1>
-        <h2>{introText}</h2>
-        <div className="details">
-          <div>
-            <FaMapMarkerAlt />
+    <div className="grid md:grid-cols-[2fr_1fr] gap-4 md:gap-6 mb-2 md:mb-6">
+      <div className="not-prose details_wrap flex flex-col gap-2 md:gap-6">
+        <div>
+          <h1 className="text-lg md:text-3xl mb-0 text-davidblack font-bold uppercase">{title}</h1>
+          <h2 className="intro mt-0 text-md md:text-2xl text-davidblue font-semibold">{introText}</h2>
+        </div>
+        <div className="grid grid-cols-2 gap-x-4 md:gap-x-6 gap-y-1 md:gap-y-2 details">
+          <div className='flex flex-row items-center gap-1'>
+            <FaMapMarkerAlt className='fill-davidpink' />
             {location}
           </div>
-          <div>
-            <FaPhoneAlt />
+          <div className='flex flex-row items-center gap-1'>
+            <FaPhoneAlt className='fill-davidpink' />
             <a href={`tel:${phone}`}>{phone}</a>
           </div>
-          <div>
-            <FaAt />
+          <div className='flex flex-row items-center gap-1'>
+            <FaAt className='fill-davidpink' />
             <a href={`mailto:${email}`}>{email}</a>
           </div>
-          <div>
-            <FaLink />
+          <div className='flex flex-row items-center gap-1'>
+            <FaLink className='fill-davidpink' />
             <a href={`https://${website}`}>{website}</a>
           </div>
         </div>
       </div>
       {/* <Img fluid={image.fluid} /> */}
-      <div className="image-wrap">
-      <GatsbyImage className="image-hovered" alt="David Hovered!!!!" image={imageHover.gatsbyImageData} />
-      <GatsbyImage className="image-default" alt="David" image={image.gatsbyImageData} />
+      <div className="image-wrap h-[160px] w-[160px] md:h-[230px] md:w-[230px] mx-auto">
+        <GatsbyImage
+          className="image-default"
+          alt="David"
+          image={image.gatsbyImageData}
+        />
       </div>
-    </HeaderStyles>
+    </div>
   );
 }

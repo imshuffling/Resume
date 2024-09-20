@@ -1,16 +1,26 @@
-import React from 'react';
+import React from "react";
 import { FaCalendar, FaMapMarkerAlt } from "react-icons/fa";
 
-export default function BlockEducation( {title, university, to, end } ) {
+export default function BlockEducation({ title, university, to, end }) {
   return (
-    <section className="education">
-        <h3 className="headline">Education</h3>
-        <h2>{title}</h2>
-        <div className="where">{university}</div>
-        <div className="date">
-          <div className="date__item"><FaCalendar />{to}</div>&nbsp;-&nbsp;<div className="date__item">{end}</div>
-          <div className="date_location"><FaMapMarkerAlt />Portsmouth, UK</div>
+    <article className="prose education">
+      <h3 className="headline text-lg border-b-2">Education</h3>
+      <div className='not-prose mb-2'>
+        <h3 className='text-md md:text-lg font-bold'>{title}</h3>
+        <div className="text-davidblue text-md where font-bold">{university}</div>
+      </div>
+      <div className="flex gap-1 items-center date">
+        <div className="flex gap-1 items-center date__item">
+          <FaCalendar />
+          {to}
         </div>
-    </section>
+        &nbsp;-&nbsp;
+        <div className="flex gap-1 items-center date__item">{end}</div>
+        <div className="flex gap-1 items-center date_location">
+          <FaMapMarkerAlt />
+          Portsmouth, UK
+        </div>
+      </div>
+    </article>
   );
 }

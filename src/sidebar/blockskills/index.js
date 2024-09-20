@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-export default function BlockSkills( {title, skill} ) {
+export default function BlockSkills({ title, skill }) {
   return (
-    <section className="skills">
-        <h3 className="headline">{title}</h3>
-        <ul>
-          {skill.map((i, id) =>
-              <li key={id}>{i}</li>
-          )}
-        </ul>
+    <section className="prose skills">
+      <h3 className="headline text-lg">{title}</h3>
+      <ul className='not-prose list-none p-0 flex flex-row gap-1 flex-wrap'>
+        {skill.map((i, id) => (
+          <li className='bg-gray-100 text-black p-1 rounded-sm' key={id}>{i}</li>
+        ))}
+      </ul>
     </section>
   );
 }
