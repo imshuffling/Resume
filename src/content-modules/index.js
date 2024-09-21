@@ -8,7 +8,6 @@ const MODULE_MAP = {
 };
 
 export default function ContentModules({ mainContent }) {
-  console.log("---", mainContent);
   return (
     <>
       {mainContent.map(({ __typename: type, ...props }, i) => {

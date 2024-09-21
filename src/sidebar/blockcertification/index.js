@@ -9,7 +9,7 @@ import Miro from "../../images/miro-essentials.png";
 export default function BlockCertification({ title, items }) {
   return (
     <section className="prose certification">
-      <h3 className="headline text-lg">{title}</h3>
+      <h3 className="headline text-lg border-b-2">{title}</h3>
       <div className="flex flex-col gap-3">
         {items.map((i, id) => (
           <div className="flex gap-3 items-start certification__item" key={id}>

@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import BlockSummary from './blocksummary';
-import BlockSkills from '../sidebar/blockskills';
-import BlockCertification from './blockcertification';
+import BlockSummary from "./blocksummary";
+import BlockSkills from "../sidebar/blockskills";
+import BlockCertification from "./blockcertification";
 
 const MODULE_MAP = {
   ContentfulSummary: BlockSummary,
@@ -12,14 +12,13 @@ const MODULE_MAP = {
 };
 
 const propTypes = {
-    sidebar: PropTypes.any
+  sidebar: PropTypes.any,
 };
 
-export default function Sidebar({sidebar}) {
-  // console.log('---', sidebar);
+export default function Sidebar({ sidebar }) {
   return (
     <>
-      {sidebar.map(({"__typename": type, ...props}, i) => {
+      {sidebar.map(({ __typename: type, ...props }, i) => {
         const Component = MODULE_MAP[type];
         return <Component key={i} {...props} />;
       })}

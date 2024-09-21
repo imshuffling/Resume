@@ -19,7 +19,7 @@ export default function BlockSummary({ title, body }) {
 
   return (
     <section className="prose summary">
-      <h3 className="headline text-lg">{title}</h3>
+      <h3 className="headline text-lg border-b-2">{title}</h3>
       {renderRichText(body, options)}
     </section>
   );

@@ -10,8 +10,8 @@ const ResumePage = ({ data }) => {
   return (
     <>
       <Header header={data.allContentfulResume.edges[0].node} />
-      <div className="flex flex-col md:grid md:grid-cols-[2fr_1fr] gap-6 md:gap-2 modules">
-        <main className="flex flex-col gap-1 md:gap-4 module mainContent prose">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] gap-6 md:gap-2 modules">
+        <main className="flex flex-col prose">
           <h3 className="headline text-lg border-b-2">Experience</h3>
           {mainContent && <ContentModules mainContent={mainContent} />}
         </main>

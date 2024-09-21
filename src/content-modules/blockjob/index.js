@@ -20,9 +20,11 @@ export default function BlockJob({ title, company, date, to, summary }) {
 
   return (
     <article className="prose job dotted-line">
-      <div className='not-prose mb-2'>
-      <h3 className='text-md md:text-lg font-bold'>{title}</h3>
-      <p className="text-davidblue text-sm md:text-md where font-semibold">{company}</p>
+      <div className="not-prose mb-2">
+        <h3 className="text-md md:text-lg font-bold">{title}</h3>
+        <p className="text-davidblue text-sm md:text-md where font-semibold">
+          {company}
+        </p>
       </div>
       <div className="flex gap-1 items-center date">
         <div className="flex gap-1 items-center date__item">
@@ -30,12 +32,13 @@ export default function BlockJob({ title, company, date, to, summary }) {
           {date}
         </div>
         <span>-</span>
-        {to && <div className="flex gap-1 items-center date__item">{to}</div>}
-        {to ? null : (
+        {to ? (
+          <div className="flex gap-1 items-center date__item">{to}</div>
+        ) : (
           <div className="flex gap-1 items-center date__item">Ongoing</div>
         )}
       </div>
-      {summary !== null && <>{renderRichText(summary, options)}</>}
+      {summary && <>{renderRichText(summary, options)}</>}
     </article>
   );
 }
