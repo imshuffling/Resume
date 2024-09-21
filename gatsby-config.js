@@ -4,12 +4,18 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-postcss",
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+        postCssPlugins: [
+          require("tailwindcss")("./tailwind.config.js"),
+          require("autoprefixer"),
+        ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: { tailwind: true },
     },
     {
       resolve: `gatsby-source-filesystem`,

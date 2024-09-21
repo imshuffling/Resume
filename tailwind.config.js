@@ -19,6 +19,9 @@ module.exports = {
       5: "32px",
       6: "48px",
     },
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         sans: ["ui-sans-serif", "system-ui", ...defaultTheme.fontFamily.sans],
@@ -28,7 +31,7 @@ module.exports = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        davidblack: '#393531',
+        davidblack: "#393531",
         davidblue: "#008CFF",
         davidpink: "#f40088",
         white: "#ffffff",

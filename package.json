@@ -1,7 +1,7 @@
 {
   "name": "gatsby-david-resume",
   "description": "David's Resume",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "David Riches <hi@davidrich.es>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.16.3",
@@ -10,9 +10,9 @@
     "gatsby-plugin-image": "^3.1.0",
     "gatsby-plugin-manifest": "^5.1.0",
     "gatsby-plugin-offline": "^6.1.0",
+    "gatsby-plugin-purgecss": "^6.2.1",
     "gatsby-plugin-react-helmet": "^6.1.0",
     "gatsby-plugin-sharp": "^5.1.0",
-    "gatsby-plugin-styled-components": "^6.8.0",
     "gatsby-source-contentful": "^8.8.0",
     "gatsby-transformer-remark": "^6.1.0",
     "gatsby-transformer-sharp": "^5.1.0",
@@ -21,9 +21,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.3.1",
-    "styled-components": "^5.3.3",
-    "typeface-karla": "^1.1.13"
+    "react-icons": "^4.3.1"
   },
   "keywords": [
     "gatsby"
