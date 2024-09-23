@@ -45,13 +45,6 @@ export const query = graphql`
               formats: [AUTO, WEBP]
             )
           }
-          imageHover {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              formats: [AUTO, WEBP]
-            )
-          }
           mainContent {
             __typename
             ... on ContentfulJob {
