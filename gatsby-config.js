@@ -15,7 +15,13 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-purgecss`,
-      options: { tailwind: true },
+      options: {
+        tailwind: true,
+        develop: true, // Enable while developing to help debug
+        purgeOnly: ["src/styles/global.css"], // Specify only global CSS for purging if needed
+        // safelist any classes that might be purged but are necessary:
+        safelist: ["container", "mx-auto", "my-2", "md:my-6", "px-2"],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,7 +33,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-transformer-remark",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     {
       resolve: `gatsby-plugin-manifest`,
