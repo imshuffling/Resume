@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import BlockSummary from "./blocksummary";
 import BlockSkills from "../sidebar/blockskills";
@@ -10,11 +9,6 @@ const MODULE_MAP = {
   ContentfulSkills: BlockSkills,
   ContentfulCertification: BlockCertification,
 };
-
-const propTypes = {
-  sidebar: PropTypes.any,
-};
-
 export default function Sidebar({ sidebar }) {
   return (
     <>
@@ -25,5 +19,3 @@ export default function Sidebar({ sidebar }) {
     </>
   );
 }
-
-Sidebar.propTypes = propTypes;

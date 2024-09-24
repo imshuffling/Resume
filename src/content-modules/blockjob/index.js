@@ -19,7 +19,7 @@ export default function BlockJob({ title, company, date, to, summary }) {
   };
 
   return (
-    <article className="prose job dotted-line">
+    <article className="prose job border-b-[0.25px] mb-2 last:border-b-0 last:mb-4">
       <div className="not-prose mb-2">
         <h3 className="text-md md:text-lg font-bold">{title}</h3>
         <p className="text-davidblue text-sm md:text-md where font-semibold">

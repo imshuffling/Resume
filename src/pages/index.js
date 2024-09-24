@@ -4,21 +4,32 @@ import Header from "../components/Header";
 import ContentModules from "../content-modules";
 import Sidebar from "../sidebar";
 
+import { useMediaQuery } from "react-responsive";
+
 const ResumePage = ({ data }) => {
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 959 });
+
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
 
   return (
     <>
       <Header header={data.allContentfulResume.edges[0].node} />
-      <div className="flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] gap-6 md:gap-2 modules">
-        <main className="flex flex-col prose">
-          <h3 className="headline text-lg border-b-2">Experience</h3>
-          {mainContent && <ContentModules mainContent={mainContent} />}
-        </main>
-        <aside className="module sidebar flex flex-col gap-4">
-          {sidebar && <Sidebar sidebar={sidebar} />}
-        </aside>
-      </div>
+
+      {isTabletOrMobile ? (
+        <div className="flex flex-col gap-4 modules prose">
+          <Sidebar sidebar={sidebar} />
+          <ContentModules mainContent={mainContent} />
+        </div>
+      ) : (
+        <div className="grid md:grid-cols-[2fr_1fr] md:gap-2 modules">
+          <main className="flex flex-col prose">
+            {mainContent && <ContentModules mainContent={mainContent} />}
+          </main>
+          <aside className="module sidebar flex flex-col gap-4">
+            {sidebar && <Sidebar sidebar={sidebar} />}
+          </aside>
+        </div>
+      )}
     </>
   );
 };
