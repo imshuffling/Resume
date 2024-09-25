@@ -21,7 +21,7 @@ const ResumePage = ({ data }) => {
           <ContentModules mainContent={mainContent} />
         </div>
       ) : (
-        <div className="grid md:grid-cols-[2fr_1fr] md:gap-2 modules">
+        <div className="grid md:grid-cols-[2fr_1fr] md:gap-6 modules">
           <main className="flex flex-col prose">
             {mainContent && <ContentModules mainContent={mainContent} />}
           </main>

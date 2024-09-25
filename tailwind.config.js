@@ -63,6 +63,33 @@ module.exports = {
         "5xl": "4.5rem",
         "6xl": "6rem",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: "65ch", // Default for non-breakpoint views
+          },
+        },
+        sm: {
+          css: {
+            maxWidth: "60ch", // Override for small screens
+          },
+        },
+        md: {
+          css: {
+            maxWidth: "70ch", // Override for medium screens
+          },
+        },
+        lg: {
+          css: {
+            maxWidth: "90ch", // Override for large screens
+          },
+        },
+        xl: {
+          css: {
+            maxWidth: "100ch", // Override for extra-large screens
+          },
+        },
+      }),
     },
   },
   plugins: [require("@tailwindcss/typography")],
