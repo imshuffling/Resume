@@ -8,7 +8,7 @@ import Miro from "../../images/miro-essentials.png";
 
 export default function BlockCertification({ title, items }) {
   return (
-    <section className="prose certification order-4">
+    <article className="prose prose-sm md:prose-md lg:prose-lg xl:prose-xl certification order-4">
       <h3 className="headline text-lg border-b-2">{title}</h3>
       <div className="flex flex-col gap-3">
         {items.map((i, id) => (
@@ -49,7 +49,7 @@ export default function BlockCertification({ title, items }) {
                 <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
               )}
             </div>
-            <div className="certification__copy text-xs">
+            <div className="certification__copy text-xs md:text-sm">
               <strong>
                 <a
                   href={i.link}
@@ -65,6 +65,6 @@ export default function BlockCertification({ title, items }) {
           </div>
         ))}
       </div>
-    </section>
+    </article>
   );
 }

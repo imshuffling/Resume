@@ -86,7 +86,7 @@ module.exports = {
         },
         xl: {
           css: {
-            maxWidth: "100ch", // Override for extra-large screens
+            maxWidth: "70ch", // Override for extra-large screens
           },
         },
       }),

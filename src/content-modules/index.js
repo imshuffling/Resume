@@ -24,10 +24,10 @@ export default function ContentModules({ mainContent }) {
   return (
     <>
       {contentfulJobBlock.length > 0 && (
-        <section className="prose jobs order-2">
+        <article className="prose prose-sm md:prose-md lg:prose-lg xl:prose-xl jobs order-2">
           <h3 className="headline text-lg border-b-2">Experience</h3>
           <div className="gap gap-2">{contentfulJobBlock}</div>
-        </section>
+        </article>
       )}
       {contentfulBlocks}
     </>

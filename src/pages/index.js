@@ -16,16 +16,16 @@ const ResumePage = ({ data }) => {
       <Header header={data.allContentfulResume.edges[0].node} />
 
       {isTabletOrMobile ? (
-        <div className="flex flex-col gap-4 modules prose">
+        <main className="flex flex-col gap-4 modules prose prose-sm md:prose-md lg:prose-lg xl:prose-xl">
           <Sidebar sidebar={sidebar} />
           <ContentModules mainContent={mainContent} />
-        </div>
+        </main>
       ) : (
-        <div className="grid md:grid-cols-[2fr_1fr] md:gap-6 modules">
-          <main className="flex flex-col prose">
+        <div className="grid md:grid-cols-[2fr_1fr] md:gap-[70px] modules">
+          <main className="flex flex-col gap-4 prose prose-sm md:prose-md lg:prose-lg xl:prose-xl">
             {mainContent && <ContentModules mainContent={mainContent} />}
           </main>
-          <aside className="module sidebar flex flex-col gap-4">
+          <aside className="module sidebar flex flex-col gap-4 md:gap-6">
             {sidebar && <Sidebar sidebar={sidebar} />}
           </aside>
         </div>

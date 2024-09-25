@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 
 export default function Layout({ children }) {
   return (
-    <div className="container my-2 md:my-6 px-2">
+    <div className="container my-4 md:my-6 px-2">
       <Helmet
         title="Resume - David Riches 🚀"
         meta={[
