@@ -1,6 +1,6 @@
-import React from "react";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
+import React from "react";
 
 export default function BlockSummary({ title, body }) {
   const Bold = ({ children }) => <strong>{children}</strong>;

@@ -1,6 +1,7 @@
 import React from "react";
-import BlockJob from "./blockjob";
+
 import BlockEducation from "./blockeducation";
+import BlockJob from "./blockjob";
 
 const MODULE_MAP = {
   ContentfulJob: BlockJob,

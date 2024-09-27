@@ -1,8 +1,8 @@
 import React from "react";
 
-import BlockSummary from "./blocksummary";
 import BlockSkills from "../sidebar/blockskills";
 import BlockCertification from "./blockcertification";
+import BlockSummary from "./blocksummary";
 
 const MODULE_MAP = {
   ContentfulSummary: BlockSummary,

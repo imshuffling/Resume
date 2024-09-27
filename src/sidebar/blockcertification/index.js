@@ -1,7 +1,8 @@
 import React from "react";
-import Contentful from "../../images/contentful.png";
+
 import Acquia from "../../images/acquia.png";
 import Bigcommerce from "../../images/bigcommerce.png";
+import Contentful from "../../images/contentful.png";
 import HeadlessCreator from "../../images/headlesscreator.png";
 import LinkedIn from "../../images/linkedIn.png";
 import Miro from "../../images/miro-essentials.png";

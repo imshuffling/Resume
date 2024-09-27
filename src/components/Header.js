@@ -1,6 +1,6 @@
-import React from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaLink, FaAt } from "react-icons/fa";
 import { GatsbyImage } from "gatsby-plugin-image";
+import React from "react";
+import { FaAt, FaLink, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { useMediaQuery } from "react-responsive";
 
 export default function Header(props) {

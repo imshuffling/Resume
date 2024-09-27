@@ -1,10 +1,10 @@
-import React from "react";
 import { graphql } from "gatsby";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+
 import Header from "../components/Header";
 import ContentModules from "../content-modules";
 import Sidebar from "../sidebar";
-
-import { useMediaQuery } from "react-responsive";
 
 const ResumePage = ({ data }) => {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 959 });
