@@ -19,23 +19,23 @@ export default function BlockJob({ title, company, date, to, summary }) {
   };
 
   return (
-    <article className="prose prose-sm md:prose-md lg:prose-lg xl:prose-xl job border-b-[0.25px] mb-2 last:border-b-0 last:mb-4">
+    <article className="job prose prose-sm mb-2 border-b-[0.25px] md:prose-md lg:prose-lg xl:prose-xl last:mb-4 last:border-b-0">
       <div className="not-prose mb-2">
         <h3 className="font-bold">{title}</h3>
-        <p className="text-davidblue text-sm md:text-md where font-semibold">
+        <p className="md:text-md where text-sm font-semibold text-davidblue">
           {company}
         </p>
       </div>
-      <div className="flex gap-1 items-center date">
-        <div className="flex gap-1 items-center date__item">
+      <div className="date flex items-center gap-1">
+        <div className="date__item flex items-center gap-1">
           <FaCalendar />
           {date}
         </div>
         <span>-</span>
         {to ? (
-          <div className="flex gap-1 items-center date__item">{to}</div>
+          <div className="date__item flex items-center gap-1">{to}</div>
         ) : (
-          <div className="flex gap-1 items-center date__item">Ongoing</div>
+          <div className="date__item flex items-center gap-1">Ongoing</div>
         )}
       </div>
       {summary && <>{renderRichText(summary, options)}</>}

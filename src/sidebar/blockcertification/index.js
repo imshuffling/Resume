@@ -8,12 +8,12 @@ import Miro from "../../images/miro-essentials.png";
 
 export default function BlockCertification({ title, items }) {
   return (
-    <article className="prose prose-sm md:prose-md lg:prose-lg xl:prose-xl certification order-4">
-      <h3 className="headline text-lg border-b-2">{title}</h3>
+    <article className="certification prose prose-sm order-4 md:prose-md lg:prose-lg xl:prose-xl">
+      <h3 className="headline border-b-2 text-lg">{title}</h3>
       <div className="flex flex-col gap-3">
         {items.map((i, id) => (
-          <div className="flex gap-2 items-start certification__item" key={id}>
-            <div className="w-5 h-5 certification__icon">
+          <div className="certification__item flex items-start gap-2" key={id}>
+            <div className="certification__icon h-5 w-5">
               {i.type[0] === "Contentful" && (
                 <img
                   className="!m-0 not-prose"

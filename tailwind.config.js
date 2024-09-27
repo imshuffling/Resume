@@ -23,6 +23,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      screens: {
+        print: { raw: "print" },
+        screen: { raw: "screen" },
+      },
       fontFamily: {
         sans: ["ui-sans-serif", "system-ui", ...defaultTheme.fontFamily.sans],
         serif: ["ui-serif", "Georgia"],
@@ -34,6 +38,7 @@ module.exports = {
         davidblack: "#393531",
         davidblue: "#008CFF",
         davidpink: "#f40088",
+        davidDarkPink: "#d4007f",
         white: "#ffffff",
         purple: "#3f3cbb",
         midnight: "#121063",

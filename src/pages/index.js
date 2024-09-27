@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 const ResumePage = ({ data }) => {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 959 });
+  const isPrint = useMediaQuery({ query: "print" }); // Detect print mode
 
   const { mainContent, sidebar } = data.allContentfulResume.edges[0].node;
 
@@ -15,14 +16,21 @@ const ResumePage = ({ data }) => {
     <>
       <Header header={data.allContentfulResume.edges[0].node} />
 
-      {isTabletOrMobile ? (
-        <main className="flex flex-col gap-4 modules prose prose-sm md:prose-md lg:prose-lg xl:prose-xl">
+      {/* Separate rendering block for print mode */}
+      {isPrint ? (
+        <main className="modules flex flex-col gap-4">
+          <ContentModules mainContent={mainContent} />
+          <Sidebar sidebar={sidebar} />
+        </main>
+      ) : // Regular layout for screen modes (tablet/mobile/desktop)
+      isTabletOrMobile ? (
+        <main className="modules prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-lg xl:prose-xl">
           <Sidebar sidebar={sidebar} />
           <ContentModules mainContent={mainContent} />
         </main>
       ) : (
-        <div className="grid md:grid-cols-[2fr_1fr] md:gap-[70px] modules">
-          <main className="flex flex-col gap-4 prose prose-sm md:prose-md lg:prose-lg xl:prose-xl">
+        <div className="modules grid md:grid-cols-[2fr_1fr] md:gap-[70px]">
+          <main className="prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-lg xl:prose-xl">
             {mainContent && <ContentModules mainContent={mainContent} />}
           </main>
           <aside className="module sidebar flex flex-col gap-4 md:gap-6">

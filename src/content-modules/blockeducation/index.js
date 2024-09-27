@@ -3,22 +3,22 @@ import { FaCalendar, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function BlockEducation({ title, university, to, end }) {
   return (
-    <article className="prose prose-sm md:prose-md lg:prose-lg xl:prose-xl education order-5">
-      <h3 className="headline text-lg border-b-2">Education</h3>
+    <article className="education prose prose-sm order-5 md:prose-md lg:prose-lg xl:prose-xl">
+      <h3 className="headline border-b-2 text-lg">Education</h3>
       <div className="not-prose mb-2">
         <h3 className="font-bold">{title}</h3>
-        <div className="text-davidblue text-md where font-bold">
+        <div className="text-md where font-bold text-davidblue">
           {university}
         </div>
       </div>
-      <div className="flex gap-1 items-center date">
-        <div className="flex gap-1 items-center date__item">
+      <div className="date flex items-center gap-1">
+        <div className="date__item flex items-center gap-1">
           <FaCalendar />
           {to}
         </div>
         &nbsp;-&nbsp;
-        <div className="flex gap-1 items-center date__item">{end}</div>
-        <div className="flex gap-1 items-center date_location">
+        <div className="date__item flex items-center gap-1">{end}</div>
+        <div className="date_location flex items-center gap-1">
           <FaMapMarkerAlt />
           Portsmouth, UK
         </div>
