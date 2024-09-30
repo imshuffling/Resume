@@ -18,22 +18,26 @@ const ResumePage = ({ data }) => {
 
       {/* Separate rendering block for print mode */}
       {isPrint ? (
-        <main className="modules flex flex-col gap-4">
-          <ContentModules mainContent={mainContent} />
-          <Sidebar sidebar={sidebar} />
+        <main className="w-full modules flex flex-row gap-6">
+          <div className="w-2/3 flex flex-col gap-2 prose">
+            <ContentModules mainContent={mainContent} />
+          </div>
+          <div className="w-1/3 flex flex-col gap-2 prose">
+            <Sidebar sidebar={sidebar} />
+          </div>
         </main>
       ) : // Regular layout for screen modes (tablet/mobile/desktop)
       isTabletOrMobile ? (
-        <main className="modules prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-lg xl:prose-xl">
+        <main className="modules prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-md xl:prose-lg">
           <Sidebar sidebar={sidebar} />
           <ContentModules mainContent={mainContent} />
         </main>
       ) : (
         <div className="modules grid md:grid-cols-[2fr_1fr] md:gap-[70px]">
-          <main className="prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-lg xl:prose-xl">
+          <main className="prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-md xl:prose-lg">
             {mainContent && <ContentModules mainContent={mainContent} />}
           </main>
-          <aside className="module sidebar flex flex-col gap-4 md:gap-6">
+          <aside className="module sidebar flex flex-col gap-4 md:gap-6 print:gap-6">
             {sidebar && <Sidebar sidebar={sidebar} />}
           </aside>
         </div>

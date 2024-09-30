@@ -1,6 +1,27 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function BlockSkills({ title, skill }) {
+  const isPrint = useMediaQuery({ query: "print" }); // Detect print mode
+
+  if (isPrint) {
+    return (
+      <article className="skills prose">
+        <h3 className="headline border-b-2 text-sm">{title}</h3>
+        <ul className="not-prose p-0 flex list-none flex-row flex-wrap gap-1">
+          {skill.map((i, id) => (
+            <li
+              className="rounded-sm bg-gray-200 p-0 text-xs text-black"
+              key={id}
+            >
+              {i}
+            </li>
+          ))}
+        </ul>
+      </article>
+    );
+  }
+
   return (
     <article className="skills prose prose-sm order-3 md:prose-md lg:prose-lg xl:prose-xl">
       <h3 className="headline border-b-2 text-lg">{title}</h3>

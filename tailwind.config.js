@@ -55,6 +55,12 @@ module.exports = {
         lg: "1216px",
         xl: "1536px",
       },
+      width: {
+        a4: "210mm",
+      },
+      height: {
+        a4: "297mm",
+      },
       fontSize: {
         xs: ".875rem",
         sm: "1rem",
