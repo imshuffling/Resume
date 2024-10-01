@@ -57,7 +57,7 @@ export default function BlockCertification({ title, items }) {
                   <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
                 )}
               </div>
-              <div className="certification__copy text-xs items-start">
+              <div className="certification__copy text-xs leading-7 items-center">
                 <strong>
                   <a
                     href={i.link}
@@ -84,7 +84,7 @@ export default function BlockCertification({ title, items }) {
       <h3 className="headline border-b-2 md:text-md lg:text-lg">{title}</h3>
       <div className="flex flex-col gap-3">
         {items.map((i, id) => (
-          <div className="certification__item flex items-start gap-2" key={id}>
+          <div className="certification__item flex items-center gap-2" key={id}>
             <div className="certification__icon h-5 w-5">
               {i.type[0] === "Contentful" && (
                 <img
@@ -121,7 +121,7 @@ export default function BlockCertification({ title, items }) {
                 <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
               )}
             </div>
-            <div className="certification__copy text-xs md:text-sm">
+            <div className="certification__copy text-xs md:text-sm leading-7">
               <strong>
                 <a
                   href={i.link}
