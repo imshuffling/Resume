@@ -21,9 +21,9 @@ export default function BlockSummary({ title, body }) {
 
   if (isPrint) {
     return (
-      <section className="summary prose">
+      <section className="summary prose-sm">
         <h3 className="headline border-b-2 text-sm">{title}</h3>
-        <div className="text-xs">{renderRichText(body, options)}</div>
+        {renderRichText(body, options)}
       </section>
     );
   }

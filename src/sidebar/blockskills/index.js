@@ -6,7 +6,7 @@ export default function BlockSkills({ title, skill }) {
 
   if (isPrint) {
     return (
-      <article className="skills prose">
+      <article className="skills prose-sm">
         <h3 className="headline border-b-2 text-sm">{title}</h3>
         <ul className="not-prose p-0 flex list-none flex-row flex-wrap gap-1">
           {skill.map((i, id) => (

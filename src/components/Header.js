@@ -11,18 +11,18 @@ export default function Header(props) {
 
   if (isPrint) {
     return (
-      <div className="gap-6 mb-4 w-full flex flex-row">
+      <div className="gap-4 mb-3 w-full flex flex-row">
         <div className="w-2/3">
-          <div className="details_wrap flex flex-col gap-2 md:gap-6">
+          <div className="details_wrap flex flex-col gap-2">
             <div>
-              <h1 className="mb-0 text-lg font-bold uppercase text-davidblack md:text-3xl">
+              <h1 className="mb-0 text-lg font-bold uppercase text-davidblack">
                 {title}
               </h1>
-              <h2 className="intro !mt-0 text-md font-semibold text-davidblue md:text-2xl">
+              <h2 className="intro !mt-0 text-md font-semibold text-davidblue">
                 {introText}
               </h2>
             </div>
-            <div className="details prose prose-sm grid grid-cols-2 gap-x-4 gap-y-1 md:prose-md lg:prose-md xl:prose-lg md:gap-x-6 md:gap-y-2">
+            <div className="details prose-sm grid grid-cols-2 gap-x-2 gap-y-1">
               <div className="flex flex-row items-center gap-1">
                 <FaMapMarkerAlt className="fill-davidpink" />
                 {location}
@@ -46,7 +46,7 @@ export default function Header(props) {
           <GatsbyImage
             alt="David"
             image={image.gatsbyImageData}
-            className="image-wrap h-[160px] w-[160px] md:h-[230px] md:w-[230px]"
+            className="image-wrap h-[160px] w-[160px]"
           />
         </div>
       </div>

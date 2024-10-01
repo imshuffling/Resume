@@ -29,7 +29,7 @@ export default function ContentModules({ mainContent }) {
     return (
       <>
         {contentfulJobBlock.length > 0 && (
-          <article className="jobs prose">
+          <article className="jobs prose-sm">
             <h3 className="headline border-b-2 text-sm">Experience</h3>
             <div className="gap gap-2">{contentfulJobBlock}</div>
           </article>

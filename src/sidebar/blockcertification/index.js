@@ -18,7 +18,7 @@ export default function BlockCertification({ title, items }) {
         <div className="flex flex-col gap-3">
           {items.map((i, id) => (
             <div
-              className="certification__item flex items-start gap-2"
+              className="certification__item flex items-center gap-2"
               key={id}
             >
               <div className="certification__icon h-3 w-3">
@@ -57,7 +57,7 @@ export default function BlockCertification({ title, items }) {
                   <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
                 )}
               </div>
-              <div className="certification__copy text-xs leading-7 items-center">
+              <div className="certification__copy text-xs leading-6 items-center">
                 <strong>
                   <a
                     href={i.link}
