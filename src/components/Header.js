@@ -11,7 +11,7 @@ export default function Header(props) {
 
   if (isPrint) {
     return (
-      <div className="gap-4 mb-3 w-full flex flex-row">
+      <div className="gap-4 mb-4 w-full flex flex-row">
         <div className="w-2/3">
           <div className="details_wrap flex flex-col gap-2">
             <div>
@@ -42,11 +42,11 @@ export default function Header(props) {
             </div>
           </div>
         </div>
-        <div className="w-1/3 mx-auto flex text-center items-center justify-center flex-col gap-2">
+        <div className="w-1/3 mx-auto flex text-center items-center justify-center flex-col gap-2 flex-grow">
           <GatsbyImage
             alt="David"
             image={image.gatsbyImageData}
-            className="image-wrap h-[160px] w-[160px]"
+            className="image-wrap h-[120px] w-[120px]"
           />
         </div>
       </div>

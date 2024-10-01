@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 
   if (isPrint) {
     return (
-      <div className="p-2 my-2">
+      <div className="p-1 my-1">
         <Helmet
           title="Resume - David Riches 🚀"
           meta={[
