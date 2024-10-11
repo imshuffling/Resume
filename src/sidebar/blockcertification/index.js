@@ -15,7 +15,7 @@ export default function BlockCertification({ title, items }) {
     return (
       <article className="certification">
         <h3 className="headline border-b-2 text-sm">{title}</h3>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1 md:gap-3">
           {items.map((i, id) => (
             <div
               className="certification__item flex items-center gap-2"
@@ -81,8 +81,8 @@ export default function BlockCertification({ title, items }) {
 
   return (
     <article className="certification prose prose-sm order-4 md:prose-md lg:prose-md xl:prose-lg">
-      <h3 className="headline border-b-2 md:text-md lg:text-lg">{title}</h3>
-      <div className="flex flex-col gap-3">
+      <h3 className="headline border-b-2 text-lg">{title}</h3>
+      <div className="flex flex-col gap-1 md:gap-3">
         {items.map((i, id) => (
           <div className="certification__item flex items-center gap-2" key={id}>
             <div className="certification__icon h-5 w-5">
