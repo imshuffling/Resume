@@ -78,6 +78,16 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: "65ch", // Default for non-breakpoint views
+            a: {
+              "&:hover": {
+                // opacity: "0.8",
+                "text-decoration-color": theme("colors.davidpink"),
+              },
+              "&:focus": {
+                color: theme("colors.davidpink"),
+                "text-decoration-color": theme("colors.davidpink"),
+              },
+            },
           },
         },
         sm: {
