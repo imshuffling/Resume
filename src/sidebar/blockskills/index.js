@@ -23,7 +23,7 @@ export default function BlockSkills({ title, skill }) {
   }
 
   return (
-    <article className="skills prose prose-sm order-3 md:prose-md lg:prose-lg xl:prose-xl">
+    <article className="skills prose prose-sm mb-2 md:mb-0 order-3 md:prose-md lg:prose-lg xl:prose-xl">
       <h3 className="headline border-b-2 text-lg">{title}</h3>
       <ul className="not-prose p-0 flex list-none flex-row flex-wrap gap-1">
         {skill.map((i, id) => (
