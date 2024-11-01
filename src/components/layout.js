@@ -26,7 +26,7 @@ export default function Layout({ children }) {
   }
 
   return (
-    <div className="container mx-auto my-4 px-4 md:my-6">
+    <div className="container mx-auto my-3 px-3 md:px-4 md:my-6">
       <Helmet
         title="Resume - David Riches 🚀"
         meta={[
