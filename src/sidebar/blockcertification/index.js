@@ -104,7 +104,7 @@ export default function BlockCertification({ title, items }) {
                 <SiMiro className="bg-[#FFD02F] p-1 rounded-sm w-5 h-5" />
               )}
             </div>
-            <div className="certification__copy text-xs md:text-sm leading-7">
+            <div className="certification__copy text-xs md:text-sm">
               <strong>
                 <a
                   href={i.link}

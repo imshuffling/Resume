@@ -55,7 +55,7 @@ export default function Header(props) {
 
   return (
     <div className="mb-4 flex flex-col-reverse gap-4 md:mb-6 md:grid md:grid-cols-[2fr_1fr] md:gap-6">
-      <div className="details_wrap flex flex-col gap-2 md:gap-6">
+      <div className="details_wrap flex flex-col gap-2 md:gap-4">
         <div>
           <h1 className="mb-0 text-lg font-bold uppercase text-davidblack md:text-3xl">
             {title}

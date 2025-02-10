@@ -16,8 +16,7 @@ export default function BlockEducation({ title, university, to, end }) {
           <FaCalendar />
           {to}
         </div>
-        &nbsp;-&nbsp;
-        <div className="date__item flex items-center gap-1">{end}</div>
+        -<div className="date__item flex items-center gap-1">{end}</div>
         <div className="date_location flex items-center gap-1">
           <FaMapMarkerAlt />
           Portsmouth, UK
