@@ -1,12 +1,13 @@
 import React from "react";
+import { FaAlgolia } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { SiContentful } from "react-icons/si";
+import { SiBigcommerce } from "react-icons/si";
+import { SiMiro } from "react-icons/si";
 import { useMediaQuery } from "react-responsive";
 
 import Acquia from "../../images/acquia.png";
-import Bigcommerce from "../../images/bigcommerce.png";
-import Contentful from "../../images/contentful.png";
 import HeadlessCreator from "../../images/headlesscreator.png";
-import LinkedIn from "../../images/linkedIn.png";
-import Miro from "../../images/miro-essentials.png";
 
 export default function BlockCertification({ title, items }) {
   const isPrint = useMediaQuery({ query: "print" }); // Detect print mode
@@ -23,21 +24,16 @@ export default function BlockCertification({ title, items }) {
             >
               <div className="certification__icon h-3 w-3">
                 {i.type[0] === "Contentful" && (
-                  <img
-                    className="!m-0 not-prose"
-                    alt={"Contentful"}
-                    src={Contentful}
-                  />
+                  <SiContentful className="fill-current" />
                 )}
                 {i.type[0] === "Acquia" && (
                   <img className="!m-0 not-prose" alt={"Acquia"} src={Acquia} />
                 )}
+                {i.type[0] === "Algolia" && (
+                  <FaAlgolia className="fill-[#0639DC] w-5 h-5" />
+                )}
                 {i.type[0] === "bigcommerce" && (
-                  <img
-                    className="!m-0 not-prose"
-                    alt={"Bigcommerce"}
-                    src={Bigcommerce}
-                  />
+                  <SiBigcommerce className="h-5 w-5" />
                 )}
                 {i.type[0] === "HeadlessCreator" && (
                   <img
@@ -47,14 +43,10 @@ export default function BlockCertification({ title, items }) {
                   />
                 )}
                 {i.type[0] === "linkedIn" && (
-                  <img
-                    className="!m-0 not-prose"
-                    alt={"linkedIn"}
-                    src={LinkedIn}
-                  />
+                  <FaLinkedin className="fill-[#0077B5] w-5 h-5" />
                 )}
                 {i.type[0] === "Miro" && (
-                  <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
+                  <SiMiro className="bg-[#FFD02F] p-1 rounded-sm w-5 h-5" />
                 )}
               </div>
               <div className="certification__copy text-xs leading-6 items-center">
@@ -87,21 +79,16 @@ export default function BlockCertification({ title, items }) {
           <div className="certification__item flex items-center gap-2" key={id}>
             <div className="certification__icon h-5 w-5">
               {i.type[0] === "Contentful" && (
-                <img
-                  className="!m-0 not-prose"
-                  alt={"Contentful"}
-                  src={Contentful}
-                />
+                <SiContentful className="h-5 w-5" />
+              )}
+              {i.type[0] === "Algolia" && (
+                <FaAlgolia className="fill-[#0639DC] w-5 h-5" />
               )}
               {i.type[0] === "Acquia" && (
                 <img className="!m-0 not-prose" alt={"Acquia"} src={Acquia} />
               )}
               {i.type[0] === "bigcommerce" && (
-                <img
-                  className="!m-0 not-prose"
-                  alt={"Bigcommerce"}
-                  src={Bigcommerce}
-                />
+                <SiBigcommerce className="h-5 w-5" />
               )}
               {i.type[0] === "HeadlessCreator" && (
                 <img
@@ -111,14 +98,10 @@ export default function BlockCertification({ title, items }) {
                 />
               )}
               {i.type[0] === "linkedIn" && (
-                <img
-                  className="!m-0 not-prose"
-                  alt={"linkedIn"}
-                  src={LinkedIn}
-                />
+                <FaLinkedin className="fill-[#0077B5] w-5 h-5" />
               )}
               {i.type[0] === "Miro" && (
-                <img className="!m-0 not-prose" alt={"Miro"} src={Miro} />
+                <SiMiro className="bg-[#FFD02F] p-1 rounded-sm w-5 h-5" />
               )}
             </div>
             <div className="certification__copy text-xs md:text-sm leading-7">
