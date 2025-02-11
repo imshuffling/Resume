@@ -62,7 +62,9 @@ export default function BlockCertification({ title, items }) {
                     {i.title}
                   </a>
                 </strong>
-                <div className="certification__year">{i.year}</div>
+                <div className="certification__year text-gray-400">
+                  {i.year}
+                </div>
               </div>
             </div>
           ))}
@@ -115,7 +117,7 @@ export default function BlockCertification({ title, items }) {
                   {i.title}
                 </a>
               </strong>
-              <div className="certification__year">{i.year}</div>
+              <div className="certification__year text-gray-400">{i.year}</div>
             </div>
           </div>
         ))}

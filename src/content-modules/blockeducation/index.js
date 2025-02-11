@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCalendar, FaMapMarkerAlt } from "react-icons/fa";
+import { GoDash } from "react-icons/go";
 
 export default function BlockEducation({ title, university, to, end }) {
   return (
@@ -11,15 +12,18 @@ export default function BlockEducation({ title, university, to, end }) {
           {university}
         </div>
       </div>
-      <div className="date flex items-center gap-1">
-        <div className="date__item flex items-center gap-1">
-          <FaCalendar />
-          {to}
+      <div className="date flex items-center gap-4">
+        <div className="date__item flex items-center gap-[2px]">
+          <span className="flex items-center gap-1">
+            <FaCalendar className="fill-gray-400" />
+            {to}
+          </span>
+          <GoDash />
+          <span>{end}</span>
         </div>
-        -<div className="date__item flex items-center gap-1">{end}</div>
-        <div className="date_location flex items-center gap-1">
-          <FaMapMarkerAlt />
-          Portsmouth, UK
+        <div className="date_location flex items-center gap-[2px]">
+          <FaMapMarkerAlt className="fill-gray-400" />
+          <span>Portsmouth, UK</span>
         </div>
       </div>
     </article>

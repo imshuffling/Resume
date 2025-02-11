@@ -64,7 +64,7 @@ export default function Header(props) {
             {introText}
           </h2>
         </div>
-        <div className="details prose prose-sm grid grid-cols-2 gap-x-4 gap-y-1 md:prose-md lg:prose-md xl:prose-lg md:gap-x-6 md:gap-y-2">
+        <div className="details prose grid grid-cols-2 gap-x-4 gap-y-1 md:prose-md lg:prose-md xl:prose-lg md:gap-x-6 md:gap-y-2">
           <div className="flex flex-row items-center gap-1">
             <FaMapMarkerAlt className="fill-davidpink" />
             {location}
