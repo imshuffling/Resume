@@ -81,9 +81,8 @@ module.exports = {
             a: {
               transitionProperty: "color, text-decoration-color",
               transitionDuration: "150ms",
-              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)", // Tailwind's default easing
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
               "&:hover": {
-                // opacity: "0.8",
                 color: theme("colors.davidpink"),
                 "text-decoration-color": theme("colors.davidpink"),
               },
