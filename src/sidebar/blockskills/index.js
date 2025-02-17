@@ -28,7 +28,7 @@ export default function BlockSkills({ title, skill }) {
       <ul className="not-prose p-0 flex list-none flex-row flex-wrap gap-1">
         {skill.map((i, id) => (
           <li
-            className="rounded-lg bg-gray-100 py-[4px] px-[8px] text-xs text-black"
+            className="rounded-lg hover:animate-[wiggle_1s_ease-in-out_infinite] bg-gray-100 py-[4px] px-[8px] text-xs text-black"
             key={id}
           >
             {i}
