@@ -7,7 +7,7 @@ export default function BlockEducation({ title, university, to, end }) {
     <article className="education mb-2 md:mb-0 prose prose-sm order-5 md:prose-md lg:prose-md xl:prose-lg">
       <h3 className="headline border-b-2 text-lg">Education</h3>
       <div className="mb-2">
-        <h3 className="text-pretty font-semibold ">
+        <h3 className="text-pretty font-semibold">
           {title}
           <br />
           <span className="text-md where font-bold text-davidblue">

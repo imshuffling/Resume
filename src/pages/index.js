@@ -73,6 +73,7 @@ export const query = graphql`
             ... on ContentfulJob {
               title
               company
+              companyLink
               date(formatString: "MM/YYYY")
               to(formatString: "MM/YYYY")
               summary {

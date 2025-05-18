@@ -2,10 +2,18 @@ import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import React from "react";
 import { FaCalendar } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { GoDash } from "react-icons/go";
 import { useMediaQuery } from "react-responsive";
 
-export default function BlockJob({ title, company, date, to, summary }) {
+export default function BlockJob({
+  title,
+  company,
+  companyLink,
+  date,
+  to,
+  summary,
+}) {
   const isPrint = useMediaQuery({ query: "print" }); // Detect print mode
 
   const Bold = ({ children }) => <strong>{children}</strong>;
@@ -52,7 +60,21 @@ export default function BlockJob({ title, company, date, to, summary }) {
         <h3 className="font-semibold text-pretty">
           {title}
           <br />
-          <span className="where text-davidblue">{company}</span>
+          {companyLink ? (
+            <span className="where">
+              <a
+                className="text-davidblue font-semibold flex items-center gap-1"
+                href={companyLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {company}
+                <FiExternalLink />
+              </a>
+            </span>
+          ) : (
+            <span className="where text-davidblue">{company}</span>
+          )}
         </h3>
         <div className="date text-xs flex items-center gap-[2px]">
           <div className="date__item flex items-center gap-1">
