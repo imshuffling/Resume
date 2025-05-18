@@ -49,8 +49,11 @@ export default function BlockJob({ title, company, date, to, summary }) {
   return (
     <article className="job prose prose-sm md:prose-md lg:prose-md xl:prose-lg mb-2 border-b-[0.25px] last:mb-4 last:border-b-0">
       <div>
-        <h4 className="font-semibold">{title}</h4>
-        <h4 className="where text-davidblue">{company}</h4>
+        <h3 className="font-semibold text-pretty">
+          {title}
+          <br />
+          <span className="where text-davidblue">{company}</span>
+        </h3>
         <div className="date text-xs flex items-center gap-[2px]">
           <div className="date__item flex items-center gap-1">
             <FaCalendar className="fill-gray-400" />
