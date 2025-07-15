@@ -80,12 +80,6 @@ export const query = graphql`
                 raw
               }
             }
-            ... on ContentfulEducation {
-              title
-              university
-              to(formatString: "MM/YYYY")
-              end(formatString: "MM/YYYY")
-            }
           }
           sidebar {
             __typename
@@ -98,6 +92,12 @@ export const query = graphql`
             ... on ContentfulSkills {
               title
               skill
+            }
+            ... on ContentfulEducation {
+              title
+              university
+              to(formatString: "MM/YYYY")
+              end(formatString: "MM/YYYY")
             }
             ... on ContentfulCertification {
               title
