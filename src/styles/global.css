@@ -1,3 +1,281 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  /* Custom colors */
+  --color-davidblack: #393531;
+  --color-davidblue: #008CFF;
+  --color-davidpink: #f40088;
+  --color-davidDarkPink: #d4007f;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-metal: #565584;
+  --color-tahiti: #3ab7bf;
+  --color-silver: #ecebff;
+  --color-bubble-gum: #ff77e9;
+  --color-bermuda: #78dcca;
+
+  /* Custom spacing */
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 48px;
+
+  /* Custom font sizes */
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-tiny: 1.125rem;
+  --font-size-base: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.875rem;
+  --font-size-2xl: 2.25rem;
+  --font-size-3xl: 3rem;
+  --font-size-4xl: 3.75rem;
+  --font-size-5xl: 4.5rem;
+  --font-size-6xl: 6rem;
+
+  /* Custom widths/heights */
+  --width-a4: 210mm;
+  --height-a4: 297mm;
+
+  /* Custom screens */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 960px;
+  --breakpoint-lg: 1216px;
+  --breakpoint-xl: 1536px;
+
+  /* Animation */
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+/* Prose CSS variables to match Tailwind v3 typography defaults */
+.prose {
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #111827;
+  --tw-prose-lead: #4b5563;
+  --tw-prose-links: #111827;
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #d1d5db;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #111827;
+  --tw-prose-quote-borders: #e5e7eb;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-kbd: #111827;
+  --tw-prose-kbd-shadows: 17 24 39;
+  --tw-prose-code: #111827;
+  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-bg: #1f2937;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+
+  color: var(--tw-prose-body);
+  max-width: 65ch;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.prose-sm {
+  font-size: 0.875rem;
+  line-height: 1.714;
+  max-width: 60ch;
+}
+
+.prose-sm p {
+  margin-top: 1.143em;
+  margin-bottom: 1.143em;
+}
+
+.prose-sm h3 {
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+
+.prose-sm h4 {
+  margin-top: 1.43em;
+  margin-bottom: 0.57em;
+  line-height: 1.43;
+}
+
+.prose-sm ul, .prose-sm ol {
+  margin-top: 1.143em;
+  margin-bottom: 1.143em;
+  padding-left: 1.571em;
+}
+
+.prose-sm li {
+  margin-top: 0.286em;
+  margin-bottom: 0.286em;
+}
+
+.prose-md {
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 70ch;
+}
+
+.prose-lg {
+  font-size: 1.125rem;
+  line-height: 1.778;
+  max-width: 90ch;
+}
+
+.prose-lg p {
+  margin-top: 1.333em;
+  margin-bottom: 1.333em;
+}
+
+.prose-xl {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  max-width: 70ch;
+}
+
+/* Headings */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: var(--tw-prose-headings);
+  font-weight: 600;
+}
+
+.prose h1 {
+  font-size: 2.25em;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0.889em;
+  line-height: 1.111;
+}
+
+.prose h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.333;
+}
+
+.prose h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+.prose h4 {
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+/* Paragraphs */
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+/* Lists */
+.prose ul, .prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ul > li {
+  padding-left: 0.375em;
+}
+
+.prose ul > li::marker {
+  color: var(--tw-prose-bullets);
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose ol > li::marker {
+  color: var(--tw-prose-counters);
+  font-weight: 400;
+}
+
+/* Links */
+.prose a {
+  color: var(--tw-prose-links);
+  text-decoration: underline;
+  font-weight: 500;
+  transition-property: color, text-decoration-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prose a:hover,
+.prose a:focus {
+  color: var(--color-davidpink);
+  text-decoration-color: var(--color-davidpink);
+}
+
+/* Strong/Bold */
+.prose strong {
+  color: var(--tw-prose-bold);
+  font-weight: 600;
+}
+
+/* Horizontal rule */
+.prose hr {
+  border-color: var(--tw-prose-hr);
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--tw-prose-quotes);
+  border-left-width: 0.25rem;
+  border-left-color: var(--tw-prose-quote-borders);
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+/* First/last child margin resets */
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+/* Fix for job borders */
+.job {
+  border-bottom-width: 0.25px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e7eb;
+}
+
+.job:last-child {
+  margin-bottom: 1rem;
+  border-bottom: 0;
+}

@@ -28,13 +28,13 @@ const ResumePage = ({ data }) => {
         </div>
       ) : // Regular layout for screen modes (tablet/mobile/desktop)
       isTabletOrMobile ? (
-        <main className="modules prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-md xl:prose-lg">
+        <main className="modules prose prose-sm flex flex-col gap-4 md:prose lg:prose xl:prose-lg">
           <Sidebar sidebar={sidebar} />
           <ContentModules mainContent={mainContent} />
         </main>
       ) : (
         <div className="modules grid md:grid-cols-[2fr_1fr] md:gap-[70px]">
-          <main className="prose prose-sm flex flex-col gap-4 md:prose-md lg:prose-md xl:prose-lg">
+          <main className="prose prose-sm flex flex-col gap-4 md:prose lg:prose xl:prose-lg">
             {mainContent && <ContentModules mainContent={mainContent} />}
           </main>
           <aside className="module sidebar flex flex-col gap-4 md:gap-6">

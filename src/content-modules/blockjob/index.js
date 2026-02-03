@@ -32,7 +32,7 @@ export default function BlockJob({
 
   if (isPrint) {
     return (
-      <article className="job prose-sm mb-2 border-b-[0.25px] last:mb-4 last:border-b-0">
+      <article className="job prose-sm mb-2 border-b-[0.25px] last:mb-4 last:border-b-[0px]">
         <div>
           <h4 className="font-semibold">{title}</h4>
           <h4 className="where text-davidblue">{company}</h4>
@@ -55,7 +55,7 @@ export default function BlockJob({
   }
 
   return (
-    <article className="job prose prose-sm md:prose-md lg:prose-md xl:prose-lg mb-2 border-b-[0.25px] last:mb-4 last:border-b-0">
+    <article className="job prose prose-sm md:prose lg:prose xl:prose-lg mb-2 border-b-[0.25px] last:mb-4 last:border-b-[0px]">
       <div>
         <h3 className="font-semibold text-pretty">
           {title}

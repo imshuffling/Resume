@@ -42,7 +42,7 @@ export default function ContentModules({ mainContent }) {
   return (
     <>
       {contentfulJobBlock.length > 0 && (
-        <article className="jobs prose prose-sm order-2 md:prose-md lg:prose-md xl:prose-lg">
+        <article className="jobs prose prose-sm order-2 md:prose lg:prose xl:prose-lg">
           <h3 className="headline border-b-2 text-lg">Experience</h3>
           <div className="gap gap-2">{contentfulJobBlock}</div>
         </article>

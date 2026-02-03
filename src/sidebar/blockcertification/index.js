@@ -57,7 +57,7 @@ export default function BlockCertification({ title, items }) {
   // console.log("title", title);
 
   return (
-    <article className="certification mb-2 md:mb-0 prose prose-sm order-4 md:prose-md lg:prose-md xl:prose-lg">
+    <article className="certification mb-2 md:mb-0 prose prose-sm order-4 md:prose lg:prose xl:prose-lg">
       <h3 className="headline border-b-2 text-lg">{title}</h3>
       <div className="flex flex-col gap-1 md:gap-3">
         {items.map((i, id) => (

@@ -4,7 +4,7 @@ import { GoDash } from "react-icons/go";
 
 export default function BlockEducation({ title, university, to, end }) {
   return (
-    <article className="education mb-2 md:mb-0 prose prose-sm order-5 md:prose-md lg:prose-md xl:prose-lg">
+    <article className="education mb-2 md:mb-0 prose prose-sm order-5 md:prose lg:prose xl:prose-lg">
       <h3 className="headline border-b-2 text-lg">Education</h3>
       <div className="mb-2">
         <h3 className="text-pretty font-semibold">
