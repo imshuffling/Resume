@@ -55,7 +55,7 @@ export default function Header(props) {
         <GatsbyImage
           alt="David"
           image={image.gatsbyImageData}
-          className="image-wrap h-[160px] w-[160px] md:h-[230px] md:w-[230px]"
+          className="image-wrap rounded-full h-[160px] w-[160px] md:h-[230px] md:w-[230px]"
         />
       </div>
     </div>
